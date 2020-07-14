@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 //intent is what you intend to do like make a call or open a webpage, etc.
                 //in this case we want to go from here (MainActivity) to the other activity (ShowGuess)
                 Intent intent = new Intent(MainActivity.this, ShowGuess.class);
+                //send some data to the second activity and use a key-value pair
+                //to get the data from this, use "getIntent()" in the other activity
+                intent.putExtra("guess", "Hello there");
                 //the intent has been created so now it needs to actually be started
                 startActivity(intent);
             }
