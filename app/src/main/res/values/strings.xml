@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivityPractice</string>
+    <string name="guess_the_name">guess the name</string>
+    <string name="add_guess">Enter guess</string>
+</resources>
