@@ -15,8 +15,11 @@ public class ShowGuess extends AppCompatActivity {
 
         showGuessTextView = findViewById(R.id.received_text_view);
 
-        //get the data that was sent from the other activity by using its key and then update the TextView
-        String value = getIntent().getStringExtra("guess");
-        showGuessTextView.setText(value);
+        //make sure there was actually something entered
+        if(getIntent().getStringExtra("guess") != null) {
+            //get the data that was sent from the other activity by using its key and then update the TextView
+            String value = getIntent().getStringExtra("guess");
+            showGuessTextView.setText(value);
+        }
     }
 }
